@@ -1,0 +1,15 @@
+package com.example.exampledemo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class WebsiteController {
+
+    @GetMapping()
+    String getWebsiteContent(){
+        return "test";
+    }
+
+}
